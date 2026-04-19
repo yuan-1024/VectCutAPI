@@ -17,7 +17,9 @@ BASE_URL = f"http://localhost:{PORT}"
 LICENSE_KEY = "trial"  # Trial license key
 
 CAPCUT_DRAFT_FOLDER = "/Users/sunguannan/Movies/CapCut/User Data/Projects/com.lveditor.draft"
-JIANYINGPRO_DRAFT_FOLDER = "/Users/sunguannan/Movies/JianyingPro/User Data/Projects/com.lveditor.draft"
+#JIANYINGPRO_DRAFT_FOLDER = "/Users/sunguannan/Movies/JianyingPro/User Data/Projects/com.lveditor.draft"
+JIANYINGPRO_DRAFT_FOLDER = "D:\software\JianyingPro Drafts"
+
 
 def make_request(endpoint, data, method='POST'):
     """Send HTTP request to the server and handle the response"""
@@ -1712,7 +1714,7 @@ def test02():
 
 def test_video_track01():
     """Test adding video track"""
-    draft_folder = CAPCUT_DRAFT_FOLDER
+    draft_folder = JIANYINGPRO_DRAFT_FOLDER
     video_url = "https://cdn.wanx.aliyuncs.com/wanx/1719234057367822001/text_to_video/092faf3c94244973ab752ee1280ba76f.mp4?spm=5176.29623064.0.0.41ed26d6cBOhV3&file=092faf3c94244973ab752ee1280ba76f.mp4" # Replace with actual video URL
 
     print("\nTest: Add video track")
