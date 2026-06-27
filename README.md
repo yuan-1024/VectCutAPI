@@ -113,9 +113,9 @@ Create or update the `mcp_config.json` configuration file:
     "capcut-api": {
       "command": "python3",
       "args": ["mcp_server.py"],
-      "cwd": "/path/to/CapCutAPI",
+      "cwd": "/path/to/VectCutAPI",
       "env": {
-        "PYTHONPATH": "/path/to/CapCutAPI",
+        "PYTHONPATH": "/path/to/VectCutAPI",
         "DEBUG": "0"
       }
     }
@@ -252,6 +252,12 @@ mcp_client.call_tool("add_text", {
 ### 3\. Downloading Drafts
 
 Calling `save_draft` will generate a folder starting with `dfd_` in the current directory of `capcut_server.py`. Copy this to the CapCut/Jianying drafts directory to see the generated draft in the application.
+
+Draft output is selected by `draft_profile` in `config.json`:
+
+- `capcut_legacy`: existing CapCut template.
+- `jianying_legacy`: existing Jianying template.
+- `jianying_pro_10`: Jianying Pro 10.x Windows-style folder layout using `draft_content.json`.
 
 ## Pattern
 
